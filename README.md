@@ -1,1 +1,1 @@
-# lesson-template
+# html-css-basics
