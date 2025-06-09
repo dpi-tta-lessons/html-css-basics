@@ -307,11 +307,19 @@ Use `align-items` to control vertical alignment.
 
 This is helpful when boxes have different heights.
 
-## Practice Flexbox with a Game
+## Practice
+
+### CSS Diner
+
+Want to practice using CSS selectors? Play [CSS Diner](https://flukeout.github.io/)! It's a fun way to practice targeting elements by serving the right plates of food to the right customers.
+
+### Flexbox Froggy
 
 Want to get good at Flexbox? Play [Flexbox Froggy](https://flexboxfroggy.com/)! It’s a fun way to practice moving boxes around.
 
-<!-- TODO: more games -->
+### Grid Garden
+
+From the same creators as Flexbox Froggy, [Grid Garden](https://cssgridgarden.com/) teaches CSS Grid, another powerful layout system for two-dimensional page design.
 
 ## That’s It For Now
 
