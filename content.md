@@ -264,6 +264,7 @@ You can tell CSS which elements to style using selectors:
 
 </div>
 ```
+{: .repl}
 
 ## Making Layouts with Flexbox
 
