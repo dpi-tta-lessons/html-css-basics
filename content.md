@@ -309,15 +309,17 @@ This is helpful when boxes have different heights.
 
 ## Practice
 
-### CSS Diner
+Here are some fun games to practice your HTML and CSS skills.
+
+### CSS Diner 🍔
 
 Want to practice using CSS selectors? Play [CSS Diner](https://flukeout.github.io/)! It's a fun way to practice targeting elements by serving the right plates of food to the right customers.
 
-### Flexbox Froggy
+### Flexbox Froggy 🐸
 
 Want to get good at Flexbox? Play [Flexbox Froggy](https://flexboxfroggy.com/)! It’s a fun way to practice moving boxes around.
 
-### Grid Garden
+### Grid Garden 🪴
 
 From the same creators as Flexbox Froggy, [Grid Garden](https://cssgridgarden.com/) teaches CSS Grid, another powerful layout system for two-dimensional page design.
 
