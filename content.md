@@ -4,7 +4,7 @@ Let’s get started with HTML & CSS — the languages behind everything you see 
 
 ## Just Plain Text
 
-HTML starts simple. When you create an .html file and type 'Hello, world!':
+HTML starts simple. When you create an `.html` file and type 'Hello, world!':
 
 ```html
 Hello, world!
@@ -13,20 +13,47 @@ Hello, world!
 
 The browser will show exactly that. No styling. No structure. Just text. It’s your blank canvas.
 
+## What Does "HTML" Mean?
+
+HTML stands for **HyperText Markup Language**.
+
+Let’s break that down:
+
+- **HyperText** means text that contains links — you can click to jump to another page or place.
+- **Markup** means adding extra information around your content to tell the computer what it is or how it should be shown.
+
+### Why “Markup”?
+
+The word **markup** comes from the world of print publishing, where editors and printers would literally mark up manuscripts with instructions like "make this bold" or "this is a heading."
+
+HTML works the same way — you're marking up plain text with tags like `<h1>`, `<p>`, or `<a>` to give it meaning and structure.
+
+### A Bit of History
+
+The web was originally created to help researchers share documents (like academic papers). That’s why HTML was designed to describe the structure of content — not how it looks.
+
+For example:
+
+- `<h1>` means “this is a main heading”
+- `<blockquote>` means “this is a quote”
+- `<cite>` means “this is a source”
+
+So, when you write HTML, you’re not just making things appear — you’re describing what they are.
+
 ## Links That Go Places
 
-<!-- TODO: add what html stands for -->
+Now that you know what **HyperText** means, let’s try a link.
 
-HTML stands for **HyperText Markup Language**. The "HyperText" part is all about links — connecting one page to another.
-
-You can make a link using the `<a>` tag (short for "anchor"):
+You can create one using the `<a>` tag — short for “anchor”:
 
 ```html
-<a href="https://youtu.be/Aq5WXmQQooo">Click me! 😎</a>
+<a href="https://youtu.be/Aq5WXmQQooo" target="_blank">Click me! 😎</a>
 ```
 {: .repl }
 
-The `href` attribute tells the browser where to go. The text between the tags is what the user clicks.
+- The `href` *attribute* tells the browser where to go.
+- The `target` *attribute* with a *value* `_blank` tells the browser to open this link in a new tab.
+- The text between the tags `Click me! 😎` is what the user clicks.
 
 ## What an HTML Element Looks Like
 
