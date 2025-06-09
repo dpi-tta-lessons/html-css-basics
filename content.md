@@ -22,7 +22,7 @@ Let’s break that down:
 - **HyperText** means text that contains links — you can click to jump to another page or place.
 - **Markup** means adding extra information around your content to tell the computer what it is or how it should be shown.
 
-### Why “Markup”?
+### Why "Markup"?
 
 The word **markup** comes from the world of print publishing, where editors and printers would literally mark up manuscripts with instructions like "make this bold" or "this is a heading."
 
@@ -34,24 +34,24 @@ The web was originally created to help researchers share documents (like academi
 
 For example:
 
-- `<h1>` means “this is a main heading”
-- `<blockquote>` means “this is a quote”
-- `<cite>` means “this is a source”
+- `<h1>` means "this is a main heading"
+- `<blockquote>` means "this is a quote"
+- `<cite>` means "this is a source"
 
-So, when you write HTML, you’re not just making things appear — you’re describing what they are.
+So, when you write HTML, you’re not just making things *appear* — you’re *describing* what they are.
 
 ## Links That Go Places
 
 Now that you know what **HyperText** means, let’s try a link.
 
-You can create one using the `<a>` tag — short for “anchor”:
+You can create one using the `<a>` tag — short for "anchor":
 
 ```html
 <a href="https://youtu.be/Aq5WXmQQooo" target="_blank">Click me! 😎</a>
 ```
 {: .repl }
 
-- The `href` *attribute* tells the browser where to go.
+- The `href` *attribute* with a *value* `https://youtu.be/Aq5WXmQQooo` tells the browser where to go.
 - The `target` *attribute* with a *value* `_blank` tells the browser to open this link in a new tab.
 - The text between the tags `Click me! 😎` is what the user clicks.
 
@@ -74,7 +74,7 @@ Here’s an example:
 ```
 {: .repl }
 
-There’s an opening tag (`<p>`), content (This is a paragraph.), and a closing tag (`</p>`).
+There’s an **opening tag**, `<p>`, **content** `This is a paragraph.`, and a **closing tag**, `</p>`.
 
 ## Changing Style with One Attribute
 
@@ -96,25 +96,24 @@ Using a `style` attribute works, but 'inline styles' are generally considered a 
 What if you want to style just one word inside a paragraph? Use `<span>`. It’s an inline tag, meaning it doesn’t break the line.
 
 ```html
-<p>I <span style="color: green;">love</span> HTML!</p>
-<span> is great for styling small parts of text.
+<p>span is great for <span style="color: green;">styling</span> small parts of text inline.</p>
 ```
 {: .repl }
 
 ## How to Show an Image
 
-To add an image, use the `<img>` tag (short for "image"). It’s a self-closing tag (no closing `</img>` needed).
+To add an image, use the `<img>` tag (short for "image"). It’s a **self-closing tag** (no closing `</img>` needed).
 
 ```html
 <img src="https://http.cat/200" alt="A cute cat">
 ```
 {: .repl }
 
-- `src=`, the file path
-- `alt=`, alternative text (shown if the image can’t load)
+- `src`, the file path (or url)
+- `alt`, alternative text (shown if the image can’t load)
 
 <aside>
-`alt=` tags are also used by screen readers to describe the image.
+`alt` attributes are also used by screen readers to describe the image.
 </aside>
 
 ## How HTML Elements Fit Together
@@ -142,7 +141,7 @@ a test.</p>
 ```
 {: .repl }
 
-The browser just shows: This is a test.
+The browser just shows `This is a test.` ignoring whitespace and newlines.
 
 ## How Pages Are Laid Out
 
@@ -195,9 +194,9 @@ Try `left`, `center`, or `right`.
 
 ## Understanding the Box Around Elements
 
-Every element in HTML is treated like a box. This is called the box model:
+Every element in HTML is treated like a box. This is called the box model.
 
-<!-- TODO: add inspector screenshot -->
+![](assets/box-model.png)
 
 - **Content**: The actual text or image
 - **Padding**: Space inside the box
@@ -227,15 +226,31 @@ This turns all text in a `<p>` tag blue.
 
 You can tell CSS which elements to style using selectors:
 
-```css
-p { color: red; }         /* all paragraphs */
-#main { font-size: 20px; } /* an element with id="main" */
-.box { border: 1px solid; } /* anything with class="box" */
-```
+```html
 
-- Element selector
-- `#`: ID selector
-- `.`: Class selector
+<style>
+  /* all paragraphs */
+  p { 
+    color: red;
+  }
+
+  /* an element with id="main" */
+  #main {
+    font-size: 20px;
+  } 
+
+  /* anything with class="box" */
+  .box {
+    border: 1px solid;
+  }
+</style>
+
+<div id="main" class="box">
+
+  <p>CSS Selectors are fun!</p>
+
+</div>
+```
 
 ## Making Layouts with Flexbox
 
@@ -243,13 +258,13 @@ Flexbox is a layout tool that helps you arrange boxes in rows or columns.
 
 ```html
 <div style="display: flex;">
-  <div>One</div>
-  <div>Two</div>
+  <div style="border: 2px solid black">One</div>
+  <div style="border: 2px solid red">Two</div>
 </div>
 ```
 {: .repl }
 
-Now the boxes sit next to each other instead of stacking.
+Note how the boxes sit next to each other instead of stacking.
 
 ### Moving Items Side to Side
 
@@ -270,7 +285,8 @@ Use `align-items` to control vertical alignment.
 
 ```html
 <div style="display: flex; align-items: center;">
-  <div>Centered vertically</div>
+  <h1>Heading</h1>
+  <p> with a paragraph vertically aligned</p>
 </div>
 ```
 {: .repl }
