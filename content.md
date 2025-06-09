@@ -19,7 +19,7 @@ HTML stands for **HyperText Markup Language**.
 
 Let’s break that down:
 
-- **HyperText** means text that contains links — you can click to jump to another page or place.
+- **HyperText** means text that contains links, so you can click to jump to another page or place.
 - **Markup** means adding extra information around your content to tell the computer what it is or how it should be shown.
 
 ### Why "Markup"?
@@ -30,7 +30,7 @@ HTML works the same way — you're marking up plain text with tags like `<h1>`, 
 
 ### A Bit of History
 
-The web was originally created to help researchers share documents (like academic papers). That’s why HTML was designed to describe the structure of content — not how it looks.
+The web was originally created by Tim Berners-Lee to help researchers at CERN share documents (like academic papers). That’s why HTML was designed to describe the structure of content — not how it looks.
 
 For example:
 
@@ -38,7 +38,7 @@ For example:
 - `<blockquote>` means "this is a quote"
 - `<cite>` means "this is a source"
 
-So, when you write HTML, you’re not just making things *appear* — you’re *describing* what they are.
+So, when you write HTML, you’re not just making things *appear*, you’re *describing* what they are.
 
 ## Links That Go Places
 
@@ -78,14 +78,27 @@ There’s an **opening tag**, `<p>`, **content** `This is a paragraph.`, and a *
 
 ## Changing Style with One Attribute
 
-You can style things right in your HTML using the `style` attribute:
+When the web was first created in the early 1990s, HTML came first. It was designed to describe the structure of content — like headings, paragraphs, links, and lists — not how it looked.
+
+Back then, web pages were mostly text, and there wasn’t much visual styling. Everything looked pretty plain.
+
+As the web grew, people wanted more control over how things looked — colors, fonts, spacing, layout, and more. But HTML wasn’t built for that.
+
+So in 1996, a new language was introduced: CSS — **Cascading Style Sheets**.
+
+- HTML: what the content is
+- CSS: how the content looks
+
+This separation makes websites easier to build, update, and manage. It’s like having one person write the article (HTML) and another do the design (CSS).
+
+You can style things using CSS right in your HTML using the `style` attribute:
 
 ```html
 <p style="color: red;">Red text</p>
 ```
 {: .repl }
 
-This tells the browser to display the text in red. CSS stands for **Cascading Style Sheets** — it’s how we style HTML.
+This tells the browser to display the text in red.
 
 <aside>
 Using a `style` attribute works, but 'inline styles' are generally considered a code smell. It’s better to use CSS style rules. (We'll show you how soon)
