@@ -28,8 +28,7 @@ Let’s break that down:
 
 ## Why "markup"?
 
-The word **markup** comes from the world of print publishing, where editors and printers would literally mark up manuscripts with instructions like "make this bold" or "this is a heading."
-HTML works the same way, you're marking up plain text with tags like `<h1>`, `<p>`, or `<a>` to give it meaning and structure.
+The word **markup** comes from the world of print publishing, where editors and printers would literally mark up manuscripts with instructions like "make this bold" or "this is a heading." HTML works the same way, you're marking up plain text with tags like `<h1>`, `<p>`, or `<a>` to give it meaning and structure.
 
 Like editors marking up manuscripts, HTML tags give meaning to parts of your text.
 
@@ -98,7 +97,7 @@ Try this inline style:
 
 This tells the browser to display the text in red.
 
-<aside>
+<aside class="warning">
   Using a <code>style</code> attribute works, but 'inline styles' are generally considered a code smell. It’s better to use CSS style rules. (We'll show you how soon)
 </aside>
 
@@ -196,11 +195,9 @@ Want to make a box stand out? Add a border with the style attribute:
 ```
 {: .repl }
 
-Make the corners round with:
-
-```html
-<div style="border-radius: 10px;">Rounded box</div>
-```
+<aside class="tip">
+  Make the corners round with a border radius. Change the style attribute to <code>"border: 1px solid black; border-radius: 10px;"</code>
+</aside>
 
 These are just a few (of many) CSS properties you can use to style elements.
 
@@ -244,6 +241,10 @@ This text remains black.
 {: .repl }
 
 This turns all text in a `<p>` tag blue.
+
+<aside class="tip">
+  Decoupling your html from your css style rules is generally considered a best practice.
+</aside>
 
 ## Choosing What to Style with CSS
 
@@ -301,7 +302,12 @@ Use `justify-content` to control horizontal space (left, right, or center).
 ```
 {: .repl }
 
-Other options: `center`, `space-around`, `flex-start`, `flex-end`.
+Other options:
+
+- `center`
+- `space-around`
+- `flex-start`
+- `flex-end`
 
 ### Lining Items Up Top to Bottom
 
