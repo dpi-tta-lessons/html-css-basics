@@ -307,7 +307,17 @@ Use `align-items` to control vertical alignment.
 
 This is helpful when boxes have different heights.
 
-## Practice
+## That’s It For Now
+
+You now know the basics of how web pages are written and styled:
+
+- ✅ HTML for structure
+- ✅ CSS for style
+- ✅ Flexbox for layout
+
+Keep building, keep practicing — you’re off to a great start!
+
+## Extra Practice
 
 Here are some fun games to practice your HTML and CSS skills.
 
@@ -322,13 +332,3 @@ Want to get good at Flexbox? Play [Flexbox Froggy](https://flexboxfroggy.com/)! 
 ### Grid Garden 🪴
 
 From the same creators as Flexbox Froggy, [Grid Garden](https://cssgridgarden.com/) teaches CSS Grid, another powerful layout system for two-dimensional page design.
-
-## That’s It For Now
-
-You now know the basics of how web pages are written and styled:
-
-- ✅ HTML for structure
-- ✅ CSS for style
-- ✅ Flexbox for layout
-
-Keep building, keep practicing — you’re off to a great start!
