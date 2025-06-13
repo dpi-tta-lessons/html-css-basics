@@ -1,8 +1,8 @@
 # HTML & CSS Basics
 
-Let’s get started with HTML & CSS — the languages behind everything you see on the web.
+In this lesson you'll explore how websites are made, starting with just a blank file and some text. You'll experiment directly with HTML & CSS, the languages behind everything you see on the web.
 
-## Just Plain Text
+## Text on a Page
 
 HTML starts simple. When you create an `.html` file and type 'Hello, world!':
 
@@ -11,7 +11,11 @@ Hello, world!
 ```
 {: .repl }
 
-The browser will show exactly that. No styling. No structure. Just text. It’s your blank canvas.
+The browser will show exactly that. No styling. No structure. Just text.
+
+<aside>
+  This is your canvas. Let’s start painting.
+</aside>
 
 ## What Does "HTML" Mean?
 
@@ -22,15 +26,18 @@ Let’s break that down:
 - **HyperText** means text that contains links, so you can click to jump to another page or place.
 - **Markup** means adding extra information around your content to tell the computer what it is or how it should be shown.
 
-### Why "Markup"?
+## Why "markup"?
 
 The word **markup** comes from the world of print publishing, where editors and printers would literally mark up manuscripts with instructions like "make this bold" or "this is a heading."
+HTML works the same way, you're marking up plain text with tags like `<h1>`, `<p>`, or `<a>` to give it meaning and structure.
 
-HTML works the same way — you're marking up plain text with tags like `<h1>`, `<p>`, or `<a>` to give it meaning and structure.
+Like editors marking up manuscripts, HTML tags give meaning to parts of your text.
 
 ### A Bit of History
 
-The web was originally created by Tim Berners-Lee to help researchers at CERN share documents (like academic papers). That’s why HTML was designed to describe the structure of content — not how it looks.
+HTML was created by Tim Berners-Lee to help scientists share documents, not to make flashy sites.
+
+That’s why tags like `<h1>` or `<blockquote>` exist: to describe the structure of a page, not its look.
 
 For example:
 
@@ -40,22 +47,7 @@ For example:
 
 So, when you write HTML, you’re not just making things *appear*, you’re *describing* what they are.
 
-## Links That Go Places
-
-Now that you know what **HyperText** means, let’s try a link.
-
-You can create one using the `<a>` tag — short for "anchor":
-
-```html
-<a href="https://youtu.be/Aq5WXmQQooo" target="_blank">Click me! 😎</a>
-```
-{: .repl }
-
-- The `href` *attribute* with a *value* `https://youtu.be/Aq5WXmQQooo` tells the browser where to go.
-- The `target` *attribute* with a *value* `_blank` tells the browser to open this link in a new tab.
-- The text between the tags `Click me! 😎` is what the user clicks.
-
-## What an HTML Element Looks Like
+## HTML Element Breakdown
 
 An HTML element usually has:
 
@@ -76,22 +68,28 @@ Here’s an example:
 
 There’s an **opening tag**, `<p>`, **content** `This is a paragraph.`, and a **closing tag**, `</p>`.
 
+## Create a link
+
+HTML is all about linking. You can create one using the `<a>` tag, short for "anchor":
+
+```html
+<a href="https://youtu.be/Aq5WXmQQooo" target="_blank">Click me! 😎</a>
+```
+{: .repl }
+
+- The `href` *attribute* with a *value* `https://youtu.be/Aq5WXmQQooo` tells the browser where to go.
+- The `target` *attribute* with a *value* `_blank` tells the browser to open this link in a new tab.
+- The text between the tags `Click me! 😎` is what the user clicks.
+
+<aside class="tip">
+  🛠️ Try this: Change the link to your favorite website.
+</aside>
+
 ## Changing Style with One Attribute
 
-When the web was first created in the early 1990s, HTML came first. It was designed to describe the structure of content — like headings, paragraphs, links, and lists — not how it looked.
+HTML structures the content. CSS styles it.
 
-Back then, web pages were mostly text, and there wasn’t much visual styling. Everything looked pretty plain.
-
-As the web grew, people wanted more control over how things looked — colors, fonts, spacing, layout, and more. But HTML wasn’t built for that.
-
-So in 1996, a new language was introduced: CSS — **Cascading Style Sheets**.
-
-- HTML: what the content is
-- CSS: how the content looks
-
-This separation makes websites easier to build, update, and manage. It’s like having one person write the article (HTML) and another do the design (CSS).
-
-You can style things using CSS right in your HTML using the `style` attribute:
+Try this inline style:
 
 ```html
 <p style="color: red;">Red text</p>
@@ -101,7 +99,7 @@ You can style things using CSS right in your HTML using the `style` attribute:
 This tells the browser to display the text in red.
 
 <aside>
-Using a `style` attribute works, but 'inline styles' are generally considered a code smell. It’s better to use CSS style rules. (We'll show you how soon)
+  Using a <code>style</code> attribute works, but 'inline styles' are generally considered a code smell. It’s better to use CSS style rules. (We'll show you how soon)
 </aside>
 
 ## Using `<span>` to Style Part of a Sentence
@@ -112,6 +110,10 @@ What if you want to style just one word inside a paragraph? Use `<span>`. It’s
 <p>span is great for <span style="color: green;">styling</span> small parts of text inline.</p>
 ```
 {: .repl }
+
+<aside class="tip">
+  🛠️ Try this: Style two different words with different colors.
+</aside>
 
 ## How to Show an Image
 
@@ -125,13 +127,17 @@ To add an image, use the `<img>` tag (short for "image"). It’s a **self-closin
 - `src`, the file path (or url)
 - `alt`, alternative text (shown if the image can’t load)
 
-<aside>
-`alt` attributes are also used by screen readers to describe the image.
+<aside class="tip">
+  Screen readers also use <code>alt</code> to describe the image for visually impaired users.
+</aside>
+
+<aside class="tip">
+  🛠️ Try this: change the <code>src</code> attribute to a different http.cat
 </aside>
 
 ## How HTML Elements Fit Together
 
-HTML is like a family tree. We often describe the relationship between elements as parent, child, and/or sibling.
+HTML is hierarchical, like a family tree. Tags can go inside other tags. We often describe the relationship between elements as parent, child, and/or sibling.
 
 ```html
 <div> <!-- grandparent -->
@@ -144,9 +150,13 @@ HTML is like a family tree. We often describe the relationship between elements 
 
 When tags go inside other tags we call this 'nesting'.
 
+<aside class="tip">
+  🛠️ Try this: Nest an <code>img</code> inside a <code>div</code> and a <code>p</code> inside the same <code>div</code>.
+</aside>
+
 ## Why Extra Spaces Don’t Show Up
 
-HTML doesn’t care about how many spaces or line breaks you add. These two are the same:
+HTML doesn't care about how many spaces or line breaks you add.
 
 ```html
 <p>This    is
@@ -307,28 +317,20 @@ Use `align-items` to control vertical alignment.
 
 This is helpful when boxes have different heights.
 
-## That’s It For Now
+## Recap
 
-You now know the basics of how web pages are written and styled:
+Now you know:
 
-- ✅ HTML for structure
-- ✅ CSS for style
-- ✅ Flexbox for layout
+- ✅ How to structure content with HTML
+- ✅ How to style with CSS
+- ✅ How to layout elements using Flexbox
 
-Keep building, keep practicing — you’re off to a great start!
+You're on your way to building real web pages!
 
 ## Extra Practice
 
-Here are some fun games to practice your HTML and CSS skills.
+Here are some fun games to practice your HTML and CSS skills:
 
-### CSS Diner 🍔
-
-Want to practice using CSS selectors? Play [CSS Diner](https://flukeout.github.io/)! It's a fun way to practice targeting elements by serving the right plates of food to the right customers.
-
-### Flexbox Froggy 🐸
-
-Want to get good at Flexbox? Play [Flexbox Froggy](https://flexboxfroggy.com/)! It’s a fun way to practice moving boxes around.
-
-### Grid Garden 🪴
-
-From the same creators as Flexbox Froggy, [Grid Garden](https://cssgridgarden.com/) teaches CSS Grid, another powerful layout system for two-dimensional page design.
+- [CSS Diner](https://flukeout.github.io/)
+- [Flexbox Froggy](https://flexboxfroggy.com/)
+- [Grid Garden](https://cssgridgarden.com/)
