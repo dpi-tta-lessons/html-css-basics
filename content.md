@@ -165,7 +165,7 @@ a test.</p>
 
 The browser just shows `This is a test.` ignoring whitespace and newlines.
 
-## HTML Comments: Talk to Humans, Not Computers
+## Comments: Talk to Humans, Not Computers
 
 Sometimes, you want to leave notes in your HTML that the browser won’t show. That’s what <strong>comments</strong> are for.
 
