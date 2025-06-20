@@ -153,8 +153,6 @@ When tags go inside other tags we call this 'nesting'.
   🛠️ Try this: Nest an <code>img</code> inside a <code>div</code> and a <code>p</code> inside the same <code>div</code>.
 </aside>
 
-<!-- TODO: add section on comments -->
-
 ## Why Extra Spaces Don’t Show Up
 
 HTML doesn't care about how many spaces or line breaks you add.
@@ -166,6 +164,29 @@ a test.</p>
 {: .repl }
 
 The browser just shows `This is a test.` ignoring whitespace and newlines.
+
+## HTML Comments: Talk to Humans, Not Computers
+
+Sometimes, you want to leave notes in your HTML that the browser won’t show. That’s what <strong>comments</strong> are for.
+
+To write a comment in HTML, wrap your note like this:
+
+```html
+<!-- This is a comment -->
+<p>This is visible text</p>
+```
+{: .repl }
+
+The browser hides anything inside `<!--` and `-->`.
+
+<aside class="tip">
+  Comments are helpful for:
+  <ul>
+    <li>Leaving reminders for yourself</li>
+    <li>Explaining tricky code</li>
+    <li>Temporarily disabling parts of a page</li>
+  </ul>
+</aside>
 
 ## How Pages Are Laid Out
 
