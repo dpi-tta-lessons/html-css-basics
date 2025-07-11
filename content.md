@@ -196,7 +196,7 @@ HTML gives your page structure. CSS decides how things look and where they go. T
 
 By default, HTML elements follow a top-to-bottom flow. Block-level tags (like `<div>`, `<p>`, `<h1>`) stack vertically. Inline tags (like `<span>`, `<a>`) sit next to each other in a row.
 
-### What a `<div>` Is For
+### What a `div` Is For
 
 `<div>` stands for division. It’s a box that holds other elements. It doesn’t show anything by itself, but it helps group things:
 
