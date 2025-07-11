@@ -86,6 +86,8 @@ HTML is all about linking. You can create one using the `<a>` tag, short for "an
 
 ## Changing Style with One Attribute
 
+<!-- TODO: add breakdown of css -->
+
 HTML structures the content. CSS styles it.
 
 Try this inline style:
