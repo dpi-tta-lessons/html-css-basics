@@ -115,8 +115,8 @@ What if you want to style just one word inside a paragraph? Use `<span>`. It’s
 </aside>
 
 ## CSS
-<!-- TODO: add breakdown of css -->
-A CSS style rule is made up of several key parts. Here's a breakdown using this example:
+
+Cascading Syle Sheets (CSS) is made up of several key parts. Here's a breakdown using this example:
 
 ```css
 p {
@@ -132,9 +132,7 @@ Parts of a CSS Rule:
 p
 ```
 
-Targets the HTML element(s) you want to style.
-
-In this case, it targets all `<p>` (paragraph) elements.
+Targets the HTML element(s) you want to style. In this case, it targets all `<p>` (paragraph) elements.
 
 ### 2. Declaration Block
 
