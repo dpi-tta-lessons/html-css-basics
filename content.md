@@ -86,8 +86,6 @@ HTML is all about linking. You can create one using the `<a>` tag, short for "an
 
 ## Changing Style with One Attribute
 
-<!-- TODO: add breakdown of css -->
-
 HTML structures the content. CSS styles it.
 
 Try this inline style:
@@ -115,6 +113,76 @@ What if you want to style just one word inside a paragraph? Use `<span>`. It’s
 <aside class="tip">
   🛠️ Try this: Style two different words with different colors.
 </aside>
+
+## CSS
+<!-- TODO: add breakdown of css -->
+A CSS style rule is made up of several key parts. Here's a breakdown using this example:
+
+```css
+p {
+  color: blue;
+}
+```
+
+Parts of a CSS Rule:
+
+### 1. Selector
+
+```css
+p
+```
+
+Targets the HTML element(s) you want to style.
+
+In this case, it targets all `<p>` (paragraph) elements.
+
+### 2. Declaration Block
+
+```css
+{
+  color: blue;
+}
+```
+
+Contains one or more declarations wrapped in curly braces `{}`.
+
+### 3. Declaration
+
+```css
+color: blue;
+```
+
+A single style rule applied to the selected element. Each declaration ends with a semicolon `;`.
+
+Each declaration has two parts:
+
+#### a. Property
+
+```css
+color
+```
+
+The style aspect you want to change (e.g., `color`, `font-size`, `margin`).
+
+#### b. Value
+
+```css
+blue
+```
+
+The setting you want to apply to the property.
+
+### Breakdown
+
+| Part              | Example            |
+| ----------------- | ------------------ |
+| Selector          | `p`                |
+| Declaration Block | `{ color: blue; }` |
+| Declaration       | `color: blue;`     |
+| Property          | `color`            |
+| Value             | `blue`             |
+
+This format is consistent across CSS, whether you're styling tags, classes, or IDs.
 
 ## How to Show an Image
 
