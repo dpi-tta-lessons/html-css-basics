@@ -424,6 +424,10 @@ Now you know:
 
 You're on your way to building real web pages!
 
+## Scrimba's HTML & CSS Course
+
+Sign up for a [Scrimba](https://scrimba.com) account and work through [HTML & CSS Crash Course](https://scrimba.com/html-css-crash-course-c02l). This is a **free course** so you don't need to pay for a membership.
+
 ## Extra Practice
 
 Here are some fun games to practice your HTML and CSS skills:
