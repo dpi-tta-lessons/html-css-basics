@@ -86,9 +86,10 @@ HTML is all about linking. You can create one using the `<a>` tag, short for "an
 
 ## Changing Style with One Attribute
 
-HTML structures the content. CSS styles it.
+We just learned the basics of HTML. HTML structures your content.
+Now let's add some style! CSS is the language that styles your content.
 
-Try this inline style:
+Let's start by adding some simple CSS using the style attribute:
 
 ```html
 <p style="color: red;">Red text</p>
@@ -98,7 +99,7 @@ Try this inline style:
 This tells the browser to display the text in red.
 
 <aside class="warning">
-  Using a <code>style</code> attribute works, but 'inline styles' are generally considered a code smell. It’s better to use CSS style rules. (We'll show you how soon)
+  When we use the <code>style</code> attribute directly on an HTML element, that's called using inline styles. 'Inline styles' work, but are generally considered a "code smell" (like food that is still edible, but somethings's off). It’s better to use CSS style rules. (We'll show you how soon)
 </aside>
 
 ## Using `<span>` to Style Part of a Sentence
