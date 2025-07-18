@@ -4,7 +4,7 @@ In this lesson you'll explore how websites are made, starting with just a blank 
 
 ## Text on a Page
 
-HTML starts simple. When you create an `.html` file and type 'Hello, world!':
+HTML starts simple. You can generate a basic web page by creating an `.html` file on your computer, typing  `Hello, world!`, and opening that file with a web browser. Let's quickly simulate that process in the sandbox below:
 
 ```html
 Hello, world!
