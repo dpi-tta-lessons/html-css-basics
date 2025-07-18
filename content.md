@@ -221,7 +221,7 @@ When tags go inside other tags we call this 'nesting'.
   🛠️ Try this: Nest an <code>img</code> inside a <code>div</code> and a <code>p</code> inside the same <code>div</code>.
 </aside>
 
-## Why Extra Spaces Don’t Show Up
+## Extra Spaces Are Ignored
 
 HTML doesn't care about how many spaces or line breaks you add.
 
