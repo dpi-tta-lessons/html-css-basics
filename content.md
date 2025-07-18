@@ -339,7 +339,7 @@ This turns all text in a `<p>` tag blue.
 
 ## Choosing What to Style with CSS
 
-CSS selectors are used to "find" (or select) the HTML elements you want to style. The most basic selectors select elements based on name, id, or class.
+CSS selectors are used to "find" (or select) the HTML elements you want to style. The most basic selectors select elements based on name, id, or class. [W3](https://www.w3schools.com/css/css_selectors.asp)
 
 Here are some examples:
 
