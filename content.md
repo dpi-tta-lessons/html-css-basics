@@ -67,9 +67,17 @@ Here’s an example:
 
 There’s an **opening tag**, `<p>`, **content** `This is a paragraph.`, and a **closing tag**, `</p>`.
 
+### HTML Attributes
+
+HTML elements have "attributes" that provide additional information about the element. Attributes usually come in name/value pairs like `name="value"`.
+
+<aside class="tip">
+  Attributes are always specified in the opening tag.
+</aside>
+
 ## Create a link
 
-HTML is all about linking. You can create one using the `<a>` tag, short for "anchor":
+HTML is all about linking. You can create one using the `<a>` tag, short for "anchor", with some attributes:
 
 ```html
 <a href="https://youtu.be/Aq5WXmQQooo" target="_blank">Click me! 😎</a>
