@@ -456,3 +456,4 @@ Here are some fun games to practice your HTML and CSS skills:
 - [CSS Diner](https://flukeout.github.io/)
 - [Flexbox Froggy](https://flexboxfroggy.com/)
 - [Grid Garden](https://cssgridgarden.com/)
+- [Flexbox Zombies](https://flexboxzombies.com/)
