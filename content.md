@@ -13,10 +13,6 @@ Hello, world!
 
 The browser will show exactly that. No styling. No structure. Just text.
 
-<aside>
-  🎨 This is your canvas. Let’s start painting.
-</aside>
-
 ## What Does "HTML" Mean?
 
 HTML stands for **HyperText Markup Language**.
