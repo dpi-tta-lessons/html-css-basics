@@ -339,22 +339,36 @@ This turns all text in a `<p>` tag blue.
 
 ## Choosing What to Style with CSS
 
-You can tell CSS which elements to style using selectors:
+CSS selectors are used to "find" (or select) the HTML elements you want to style. The most basic selectors select elements based on name, id, or class.
+
+Here are some examples:
 
 ```html
 
 <style>
-  /* all paragraphs */
+  /*
+     Element Selector:
+
+     This selector targets all paragraph elements <p>
+  */
   p { 
     color: red;
   }
 
-  /* an element with id="main" */
+  /*
+     ID Selector:
+
+     This selector targets an element with id="main"
+  */
   #main {
     font-size: 20px;
   } 
 
-  /* anything with class="box" */
+  /*
+    Class Selector:
+
+    This selector targets all elements with class="box"
+  */
   .box {
     border: 1px solid;
   }
