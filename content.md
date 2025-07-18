@@ -4,11 +4,12 @@ In this lesson you'll explore how websites are made, starting with just a blank 
 
 ## Text on a Page
 
-HTML starts simple. You can generate a basic web page by creating an `.html` file on your computer, typing  `Hello, world!`, and opening that file with a web browser. Let's quickly simulate that process in the sandbox below:
+HTML starts simple. You can generate a basic web page by creating an `.html` file on your computer, typing `Hello, world!`, and opening that file with a web browser. Let's quickly simulate that process in the sandbox below:
 
 ```html
 Hello, world!
 ```
+
 {: .repl }
 
 The browser will show exactly that. No styling. No structure. Just text.
@@ -40,7 +41,7 @@ For example:
 - `<blockquote>` means "this is a quote"
 - `<cite>` means "this is a source"
 
-So, when you write HTML, you’re not just making things *appear*, you’re *describing* what they are.
+So, when you write HTML, you’re not just making things _appear_, you’re _describing_ what they are.
 
 ## HTML Element Breakdown
 
@@ -59,6 +60,7 @@ Here’s an example:
 ```html
 <p>This is a paragraph.</p>
 ```
+
 {: .repl }
 
 There’s an **opening tag**, `<p>`, **content** `This is a paragraph.`, and a **closing tag**, `</p>`.
@@ -78,10 +80,11 @@ HTML is all about linking. You can create one using the `<a>` tag, short for "an
 ```html
 <a href="https://youtu.be/Aq5WXmQQooo" target="_blank">Click me! 😎</a>
 ```
+
 {: .repl }
 
-- The `href` *attribute* with a *value* `https://youtu.be/Aq5WXmQQooo` tells the browser where to go.
-- The `target` *attribute* with a *value* `_blank` tells the browser to open this link in a new tab.
+- The `href` _attribute_ with a _value_ `https://youtu.be/Aq5WXmQQooo` tells the browser where to go.
+- The `target` _attribute_ with a _value_ `_blank` tells the browser to open this link in a new tab.
 - The text between the tags `Click me! 😎` is what the user clicks.
 
 <aside class="tip">
@@ -98,6 +101,7 @@ Let's start by adding some simple CSS using the style attribute:
 ```html
 <p style="color: red;">Red text</p>
 ```
+
 {: .repl }
 
 This tells the browser to display the text in red.
@@ -111,8 +115,12 @@ This tells the browser to display the text in red.
 What if you want to style just one word inside a paragraph? Use `<span>`. It’s an inline tag, meaning it doesn’t break the line.
 
 ```html
-<p>span is great for <span style="color: green;">styling</span> small parts of text inline.</p>
+<p>
+  span is great for <span style="color: green;">styling</span> small parts of
+  text inline.
+</p>
 ```
+
 {: .repl }
 
 <aside class="tip">
@@ -142,7 +150,7 @@ Targets the HTML element(s) you want to style. In this case, it targets all `<p>
 ### 2. Declaration Block
 
 ```css
-{
+ {
   color: blue;
 }
 ```
@@ -192,8 +200,9 @@ This format is consistent across CSS, whether you're styling tags, classes, or I
 To add an image, use the `<img>` tag (short for "image"). It’s a **self-closing tag** (no closing `</img>` needed).
 
 ```html
-<img src="https://http.cat/200" alt="A cute cat">
+<img src="https://http.cat/200" alt="A cute cat" />
 ```
+
 {: .repl }
 
 - `src`, the file path (or url)
@@ -217,6 +226,7 @@ To write a comment in HTML, wrap your note like this:
 <!-- This is a comment -->
 <p>This is visible text</p>
 ```
+
 {: .repl }
 
 The browser hides anything inside `<!--` and `-->`.
@@ -235,12 +245,16 @@ The browser hides anything inside `<!--` and `-->`.
 HTML is hierarchical, like a family tree. Tags can go inside other tags. We often describe the relationship between elements as parent, child, and/or sibling.
 
 ```html
-<div> <!-- grandparent -->
-  <p> <!-- parent -->
-    <span>Hello!</span> <!-- child -->
+<div>
+  <!-- grandparent -->
+  <p>
+    <!-- parent -->
+    <span>Hello!</span>
+    <!-- child -->
   </p>
 </div>
 ```
+
 {: .repl }
 
 When tags go inside other tags we call this 'nesting'.
@@ -254,9 +268,9 @@ When tags go inside other tags we call this 'nesting'.
 HTML doesn't care about how many spaces or line breaks you add.
 
 ```html
-<p>This    is
-a test.</p>
+<p>This is a test.</p>
 ```
+
 {: .repl }
 
 The browser just shows `This is a test.` ignoring whitespace and newlines.
@@ -278,6 +292,7 @@ By default, HTML elements follow a top-to-bottom flow. Block-level tags (like `<
   <p>Inside the box!</p>
 </div>
 ```
+
 {: .repl }
 
 It’s invisible unless you style it, but super useful for grouping content.
@@ -289,6 +304,7 @@ Want to make a box stand out? Add a border with the style attribute:
 ```html
 <div style="border: 1px solid black;">Hello</div>
 ```
+
 {: .repl }
 
 <aside class="tip">
@@ -304,6 +320,7 @@ Use `text-align` to move text:
 ```html
 <p style="text-align: center;">Centered text</p>
 ```
+
 {: .repl }
 
 <aside class="tip">
@@ -316,7 +333,7 @@ Every element in HTML is treated like a box. This is called the box model.
 
 ![](assets/box-model.png)
 
-- **Content**: The actual text or image
+- **Content**: The actual text or image (shown in blue above)
 - **Padding**: Space inside the box
 - **Border**: The edge of the box
 - **Margin**: Space outside the box
@@ -336,6 +353,7 @@ This text remains black.
 
 <p>This text is now blue.</p>
 ```
+
 {: .repl }
 
 This turns all text in a `<p>` tag blue.
@@ -351,14 +369,13 @@ CSS selectors are used to "find" (or select) the HTML elements you want to style
 Here are some examples:
 
 ```html
-
 <style>
   /*
      Element Selector:
 
      This selector targets all paragraph elements <p>
   */
-  p { 
+  p {
     color: red;
   }
 
@@ -369,7 +386,7 @@ Here are some examples:
   */
   #main {
     font-size: 20px;
-  } 
+  }
 
   /*
     Class Selector:
@@ -382,11 +399,10 @@ Here are some examples:
 </style>
 
 <div id="main" class="box">
-
   <p>CSS Selectors are fun!</p>
-
 </div>
 ```
+
 {: .repl}
 
 ## Making Layouts with Flexbox
@@ -399,6 +415,7 @@ Flexbox is a layout tool that helps you arrange boxes in rows or columns.
   <div style="border: 2px solid red">Two</div>
 </div>
 ```
+
 {: .repl }
 
 Note how the boxes sit next to each other instead of stacking.
@@ -412,6 +429,7 @@ Use `justify-content` to control horizontal space (left, right, or center).
   <div>Centered</div>
 </div>
 ```
+
 {: .repl }
 
 Other options:
@@ -428,9 +446,10 @@ Use `align-items` to control vertical alignment.
 ```html
 <div style="display: flex; align-items: center;">
   <h1>Heading</h1>
-  <p> with a paragraph vertically aligned</p>
+  <p>with a paragraph vertically aligned</p>
 </div>
 ```
+
 {: .repl }
 
 This is helpful when boxes have different heights.
