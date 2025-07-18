@@ -50,12 +50,12 @@ So, when you write HTML, you’re not just making things *appear*, you’re *des
 
 An HTML element usually has:
 
-- An opening tag: `<tagname>`
-- Some content: 'Content'
-- A closing tag (indicated by slash `/`): `</tagname>`
+- An opening tag, like `<p>` or `<h1>`
+- Some content, like `Hello!`
+- A closing tag (indicated by slash `/`), like `</p>` or `</h1>`
 
 ```html
-<tagname>Content</tagname>
+<h1>Hello!</h1>
 ```
 
 Here’s an example:
