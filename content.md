@@ -301,7 +301,9 @@ Use `text-align` to move text:
 ```
 {: .repl }
 
-Try `left`, `center`, or `right`.
+<aside class="tip">
+  🛠️ Try this: Move text to `left`, `center`, or `right`.
+</aside>
 
 ## Understanding the Box Around Elements
 
