@@ -316,7 +316,7 @@ Every element in HTML is treated like a box. This is called the box model.
 
 ![](assets/box-model.png)
 
-- **Content**: The actual text or image
+- **Content**: The actual text or image (shown in blue above)
 - **Padding**: Space inside the box
 - **Border**: The edge of the box
 - **Margin**: Space outside the box
